@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
+    font-family: 'Sacramento', cursive;
+  }
+
+  h1{
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    color: rgb(167, 38, 38);
   }
 .game-board{
     margin: auto;
+    font-size: 2rem;
 }
-.status{
-    text-align: center;
-}
+
   ol, ul {
     padding-left: 30px;
   }
@@ -18,13 +28,10 @@ body {
     display: table;
   }
   
-  .status {
-    margin-bottom: 10px;
-  }
-  
   .square {
+    font-family: 'Gloria Hallelujah', cursive;
     background: #fff;
-    border: 1px solid rgb(207, 70, 70);
+    border: 1px solid rgb(0, 0, 0);
     float: left;
     font-size: 24px;
     font-weight: bold;
@@ -35,6 +42,7 @@ body {
     padding: 0;
     text-align: center;
     width: 8vw;
+    color: rgb(167, 38, 38);
   }
   
   .square:focus {
@@ -42,15 +50,33 @@ body {
   }
   
   .kbd-navigation .square:focus {
-    background: #ddd;
+    background: rgb(157, 35, 35);
   }
   
   .game {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   
   .game-info {
-    margin-left: 20px;
-  }
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+}
   
+ol{
+  font-size: 1.2rem;
+  
+}
+
+
+
+.buttons{
+  border: none;
+  border-radius: 10px;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin: 2px auto;
+  background: rgb(167, 38, 38);
+  color: #fff;
+}
